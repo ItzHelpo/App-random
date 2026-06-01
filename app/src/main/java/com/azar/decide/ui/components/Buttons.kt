@@ -14,9 +14,9 @@ import androidx.compose.ui.unit.dp
 @Composable
 fun GenerateButton(
     text: String,
-    onClick: () -> Unit,
     enabled: Boolean = true,
-    modifier: Modifier = Modifier
+    modifier: Modifier = Modifier,
+    onClick: () -> Unit
 ) {
     Button(
         onClick = onClick,

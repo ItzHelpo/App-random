@@ -2,6 +2,7 @@ package com.azar.decide.feature.dice
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.ExperimentalLayoutApi
 import androidx.compose.foundation.layout.FlowRow
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxWidth
@@ -37,6 +38,7 @@ import kotlin.random.Random
 
 private val sideOptions = listOf(4, 6, 8, 10, 12, 20)
 
+@OptIn(ExperimentalLayoutApi::class)
 @Composable
 fun DiceScreen(onBack: () -> Unit, onAction: () -> Unit) {
     var count by remember { mutableIntStateOf(2) }
