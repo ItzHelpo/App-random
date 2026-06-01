@@ -1,0 +1,79 @@
+<resources>
+    <string name="app_name">Azar</string>
+
+    <!-- Inicio -->
+    <string name="home_subtitle">Decide y genera al azar</string>
+    <string name="settings">Ajustes</string>
+
+    <!-- Herramientas -->
+    <string name="tool_coin">Cara o Cruz</string>
+    <string name="tool_coin_desc">Lanza una moneda</string>
+    <string name="tool_dice">Dados</string>
+    <string name="tool_dice_desc">Tira uno o varios dados</string>
+    <string name="tool_number">Número Aleatorio</string>
+    <string name="tool_number_desc">Elige un número en un rango</string>
+    <string name="tool_yesno">Sí o No</string>
+    <string name="tool_yesno_desc">Que decida el azar</string>
+    <string name="tool_raffle">Sorteo</string>
+    <string name="tool_raffle_desc">Elige un ganador de una lista</string>
+    <string name="tool_password">Contraseña</string>
+    <string name="tool_password_desc">Contraseñas seguras al azar</string>
+    <string name="tool_lottery">Lotería</string>
+    <string name="tool_lottery_desc">Números de la suerte</string>
+
+    <!-- Común -->
+    <string name="action_generate">Generar</string>
+    <string name="action_flip">Lanzar</string>
+    <string name="action_roll">Tirar</string>
+    <string name="action_pick">Elegir</string>
+    <string name="action_copy">Copiar</string>
+    <string name="action_clear">Borrar</string>
+    <string name="copied">Copiado al portapapeles</string>
+    <string name="back">Atrás</string>
+    <string name="tap_to_start">Pulsa el botón para empezar</string>
+
+    <!-- Moneda -->
+    <string name="coin_heads">Cara</string>
+    <string name="coin_tails">Cruz</string>
+
+    <!-- Dados -->
+    <string name="dice_count">Número de dados</string>
+    <string name="dice_sides">Caras</string>
+    <string name="dice_total">Total: %1$d</string>
+
+    <!-- Número -->
+    <string name="number_min">Mínimo</string>
+    <string name="number_max">Máximo</string>
+    <string name="number_invalid_range">El máximo debe ser mayor que el mínimo</string>
+
+    <!-- Sí / No -->
+    <string name="yesno_yes">SÍ</string>
+    <string name="yesno_no">NO</string>
+
+    <!-- Sorteo -->
+    <string name="raffle_hint">Un nombre por línea</string>
+    <string name="raffle_winner">Ganador</string>
+    <string name="raffle_need_names">Añade al menos dos nombres</string>
+    <string name="raffle_remove_winner">Quitar ganador de la lista</string>
+
+    <!-- Contraseña -->
+    <string name="password_length">Longitud: %1$d</string>
+    <string name="password_uppercase">Mayúsculas (A-Z)</string>
+    <string name="password_lowercase">Minúsculas (a-z)</string>
+    <string name="password_numbers">Números (0-9)</string>
+    <string name="password_symbols">Símbolos (!@#$)</string>
+    <string name="password_need_option">Selecciona al menos un tipo de carácter</string>
+
+    <!-- Lotería -->
+    <string name="lottery_count">Cuántos números</string>
+    <string name="lottery_max">Número más alto</string>
+
+    <!-- Ajustes -->
+    <string name="settings_theme">Tema oscuro</string>
+    <string name="settings_theme_system">Seguir el sistema</string>
+    <string name="settings_sound">Sonido y vibración</string>
+    <string name="settings_about">Acerca de</string>
+    <string name="settings_version">Versión %1$s</string>
+    <string name="settings_privacy">Opciones de privacidad</string>
+    <string name="settings_made_with">Hecho con azar · Los anuncios mantienen la app gratis</string>
+</resources>

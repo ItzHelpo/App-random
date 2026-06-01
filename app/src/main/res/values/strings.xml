@@ -1,0 +1,79 @@
+<resources>
+    <string name="app_name">Azar</string>
+
+    <!-- Home -->
+    <string name="home_subtitle">Decide and generate at random</string>
+    <string name="settings">Settings</string>
+
+    <!-- Tools -->
+    <string name="tool_coin">Coin Flip</string>
+    <string name="tool_coin_desc">Heads or tails</string>
+    <string name="tool_dice">Dice</string>
+    <string name="tool_dice_desc">Roll one or more dice</string>
+    <string name="tool_number">Random Number</string>
+    <string name="tool_number_desc">Pick a number in a range</string>
+    <string name="tool_yesno">Yes or No</string>
+    <string name="tool_yesno_desc">Let chance decide</string>
+    <string name="tool_raffle">Raffle</string>
+    <string name="tool_raffle_desc">Pick a winner from a list</string>
+    <string name="tool_password">Password</string>
+    <string name="tool_password_desc">Strong random passwords</string>
+    <string name="tool_lottery">Lottery</string>
+    <string name="tool_lottery_desc">Lucky numbers</string>
+
+    <!-- Common -->
+    <string name="action_generate">Generate</string>
+    <string name="action_flip">Flip</string>
+    <string name="action_roll">Roll</string>
+    <string name="action_pick">Pick</string>
+    <string name="action_copy">Copy</string>
+    <string name="action_clear">Clear</string>
+    <string name="copied">Copied to clipboard</string>
+    <string name="back">Back</string>
+    <string name="tap_to_start">Tap the button to start</string>
+
+    <!-- Coin -->
+    <string name="coin_heads">Heads</string>
+    <string name="coin_tails">Tails</string>
+
+    <!-- Dice -->
+    <string name="dice_count">Number of dice</string>
+    <string name="dice_sides">Sides</string>
+    <string name="dice_total">Total: %1$d</string>
+
+    <!-- Number -->
+    <string name="number_min">Minimum</string>
+    <string name="number_max">Maximum</string>
+    <string name="number_invalid_range">Maximum must be greater than minimum</string>
+
+    <!-- Yes / No -->
+    <string name="yesno_yes">YES</string>
+    <string name="yesno_no">NO</string>
+
+    <!-- Raffle -->
+    <string name="raffle_hint">One name per line</string>
+    <string name="raffle_winner">Winner</string>
+    <string name="raffle_need_names">Add at least two names</string>
+    <string name="raffle_remove_winner">Remove winner from list</string>
+
+    <!-- Password -->
+    <string name="password_length">Length: %1$d</string>
+    <string name="password_uppercase">Uppercase (A-Z)</string>
+    <string name="password_lowercase">Lowercase (a-z)</string>
+    <string name="password_numbers">Numbers (0-9)</string>
+    <string name="password_symbols">Symbols (!@#$)</string>
+    <string name="password_need_option">Select at least one character type</string>
+
+    <!-- Lottery -->
+    <string name="lottery_count">How many numbers</string>
+    <string name="lottery_max">Highest number</string>
+
+    <!-- Settings -->
+    <string name="settings_theme">Dark theme</string>
+    <string name="settings_theme_system">Follow system</string>
+    <string name="settings_sound">Sound &amp; vibration</string>
+    <string name="settings_about">About</string>
+    <string name="settings_version">Version %1$s</string>
+    <string name="settings_privacy">Privacy choices</string>
+    <string name="settings_made_with">Made with chance · Ads keep this app free</string>
+</resources>
