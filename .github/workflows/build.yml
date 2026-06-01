@@ -13,6 +13,7 @@ on:
 
 permissions:
   contents: write
+  issues: write
 
 jobs:
   build:
@@ -37,7 +38,38 @@ jobs:
         run: chmod +x ./gradlew
 
       - name: Build debug APK
-        run: ./gradlew assembleDebug --no-daemon --stacktrace
+        run: |
+          set -o pipefail
+          ./gradlew assembleDebug --no-daemon --stacktrace 2>&1 | tee build.log
+
+      - name: Report build failure as an issue
+        if: failure()
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          {
+            echo "Automated build failure report for commit \`${GITHUB_SHA}\`."
+            echo ""
+            echo "Run: ${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}"
+            echo ""
+            echo '```'
+            if [ -f build.log ]; then
+              # Keep only the most relevant tail of the Gradle output.
+              grep -nE "error:|e: |FAILED|What went wrong|Caused by|Unresolved|> Task|BUILD" build.log | tail -n 120
+              echo "----- last 200 lines -----"
+              tail -n 200 build.log
+            else
+              echo "build.log not found - failure happened before the Gradle step."
+            fi
+            echo '```'
+          } > issue_body.md
+          gh issue create \
+            --title "CI build failure (run ${GITHUB_RUN_ID})" \
+            --body-file issue_body.md \
+            --label "ci-failure" 2>/dev/null \
+          || gh issue create \
+            --title "CI build failure (run ${GITHUB_RUN_ID})" \
+            --body-file issue_body.md
 
       - name: Rename APK
         run: |
