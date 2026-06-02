@@ -1,0 +1,68 @@
+<resources>
+    <string name="app_name">Repón</string>
+
+    <string name="home_subtitle">Ricompra prima che finisca</string>
+    <string name="home_empty_title">Ancora niente qui</string>
+    <string name="home_empty_body">Aggiungi i tuoi consumabili di tutti i giorni (caffè, dentifricio, cibo per animali…) e Repón ti avvisa prima che finiscano.</string>
+    <string name="home_section_soon">Da comprare presto</string>
+    <string name="home_section_ok">Ne hai ancora a sufficienza</string>
+    <string name="add_item">Aggiungi</string>
+    <string name="settings">Impostazioni</string>
+    <string name="sort_label">Ordina</string>
+    <string name="sort_urgency">Per urgenza</string>
+    <string name="sort_name">Per nome</string>
+    <string name="sort_recent">Più recenti</string>
+
+    <string name="status_ok">Tutto a posto</string>
+    <string name="status_soon">Da comprare presto</string>
+    <string name="status_out">Finito</string>
+    <string name="due_today">Finisce oggi</string>
+    <plurals name="days_left">
+        <item quantity="one">Manca %d giorno</item>
+        <item quantity="other">Mancano %d giorni</item>
+    </plurals>
+    <plurals name="days_overdue">
+        <item quantity="one">Finito %d giorno fa</item>
+        <item quantity="other">Finito %d giorni fa</item>
+    </plurals>
+
+    <string name="action_bought">Comprato</string>
+    <string name="action_save">Salva</string>
+    <string name="action_delete">Elimina</string>
+    <string name="action_cancel">Annulla</string>
+    <string name="action_today">Oggi</string>
+    <string name="back">Indietro</string>
+    <string name="restocked_toast">Fatto! Azzerato, sto imparando il tuo ritmo</string>
+
+    <string name="new_item_title">Nuovo prodotto</string>
+    <string name="edit_item_title">Modifica prodotto</string>
+    <string name="field_name">Nome</string>
+    <string name="field_name_hint">es. Caffè, Dentifricio, Cibo per animali</string>
+    <string name="field_emoji">Icona</string>
+    <string name="field_duration">Mi dura circa… (giorni)</string>
+    <string name="field_duration_help">Repón lo regola da solo ogni volta che ricompri.</string>
+    <string name="field_buffer">Avvisami questi giorni prima</string>
+    <string name="field_started">Comprato / aperto il</string>
+    <string name="field_notify">Avvisami quando sta finendo</string>
+    <string name="error_name_required">Inserisci un nome</string>
+    <string name="error_duration_required">Indica quanti giorni dura</string>
+    <string name="learned_from">Regolato dai tuoi ultimi %1$d riacquisti</string>
+
+    <string name="settings_notifications">Avvisi</string>
+    <string name="settings_notifications_desc">Ricevi una notifica quando qualcosa sta finendo</string>
+    <string name="settings_theme">Aspetto</string>
+    <string name="theme_system">Sistema</string>
+    <string name="theme_light">Chiaro</string>
+    <string name="theme_dark">Scuro</string>
+    <string name="settings_about">Informazioni</string>
+    <string name="settings_version">Versione %1$s</string>
+    <string name="settings_tagline">Offline · privato · la pubblicità mantiene l\'app gratis</string>
+    <string name="permission_notifications_rationale">Consenti le notifiche così Repón ti avvisa prima che finisca qualcosa.</string>
+
+    <string name="channel_name">Promemoria di riacquisto</string>
+    <string name="channel_desc">Avvisi quando un prodotto sta per finire</string>
+    <string name="notif_title_soon">Sta finendo</string>
+    <string name="notif_title_out">È finito</string>
+    <string name="notif_text_soon">%1$s è quasi finito — è ora di comprarne ancora.</string>
+    <string name="notif_text_out">Finito: %1$s.</string>
+</resources>

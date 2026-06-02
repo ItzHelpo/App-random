@@ -9,6 +9,10 @@
     <string name="home_section_ok">Te queda de sobra</string>
     <string name="add_item">Añadir</string>
     <string name="settings">Ajustes</string>
+    <string name="sort_label">Ordenar</string>
+    <string name="sort_urgency">Por urgencia</string>
+    <string name="sort_name">Por nombre</string>
+    <string name="sort_recent">Más recientes</string>
 
     <!-- Estado -->
     <string name="status_ok">Vas bien</string>
@@ -29,6 +33,7 @@
     <string name="action_save">Guardar</string>
     <string name="action_delete">Eliminar</string>
     <string name="action_cancel">Cancelar</string>
+    <string name="action_today">Hoy</string>
     <string name="back">Atrás</string>
     <string name="restocked_toast">¡Hecho! Reiniciado y aprendiendo tu ritmo</string>
 

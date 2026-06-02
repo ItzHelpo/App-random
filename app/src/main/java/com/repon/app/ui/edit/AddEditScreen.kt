@@ -229,6 +229,6 @@ private fun StartDateRow(epochDay: Long, onChange: (Long) -> Unit) {
                 enabled = epochDay < today
             ) { Text("+1") }
         }
-        TextButton(onClick = { onChange(today) }) { Text("Hoy / Today") }
+        TextButton(onClick = { onChange(today) }) { Text(stringResource(R.string.action_today)) }
     }
 }

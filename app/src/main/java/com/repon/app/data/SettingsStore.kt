@@ -19,6 +19,7 @@ class SettingsStore(private val context: Context) {
     private object Keys {
         val THEME = stringPreferencesKey("theme_mode")
         val REMINDERS = booleanPreferencesKey("reminders_enabled")
+        val SORT = stringPreferencesKey("sort_mode")
     }
 
     val themeMode: Flow<ThemeMode> = context.dataStore.data.map { prefs ->
@@ -33,12 +34,24 @@ class SettingsStore(private val context: Context) {
         prefs[Keys.REMINDERS] ?: true
     }
 
+    val sortMode: Flow<SortMode> = context.dataStore.data.map { prefs ->
+        when (prefs[Keys.SORT]) {
+            "NAME" -> SortMode.NAME
+            "RECENT" -> SortMode.RECENT
+            else -> SortMode.URGENCY
+        }
+    }
+
     suspend fun setThemeMode(mode: ThemeMode) {
         context.dataStore.edit { it[Keys.THEME] = mode.name }
     }
 
     suspend fun setRemindersEnabled(enabled: Boolean) {
         context.dataStore.edit { it[Keys.REMINDERS] = enabled }
+    }
+
+    suspend fun setSortMode(mode: SortMode) {
+        context.dataStore.edit { it[Keys.SORT] = mode.name }
     }
 
     suspend fun remindersEnabledNow(): Boolean =

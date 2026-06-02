@@ -9,6 +9,10 @@
     <string name="home_section_ok">Plenty left</string>
     <string name="add_item">Add item</string>
     <string name="settings">Settings</string>
+    <string name="sort_label">Sort</string>
+    <string name="sort_urgency">By urgency</string>
+    <string name="sort_name">By name</string>
+    <string name="sort_recent">Recently added</string>
 
     <!-- Status -->
     <string name="status_ok">On track</string>
@@ -29,6 +33,7 @@
     <string name="action_save">Save</string>
     <string name="action_delete">Delete</string>
     <string name="action_cancel">Cancel</string>
+    <string name="action_today">Today</string>
     <string name="back">Back</string>
     <string name="restocked_toast">Nice! Reset and learning your pace</string>
 

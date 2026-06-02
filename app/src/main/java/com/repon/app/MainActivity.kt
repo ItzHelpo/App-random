@@ -56,7 +56,7 @@ class MainActivity : ComponentActivity() {
                 }
             }
 
-            ReponTheme(themeMode = themeMode) {
+            ReponTheme(themeMode = themeMode, dynamicColor = false) {
                 Surface(
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background

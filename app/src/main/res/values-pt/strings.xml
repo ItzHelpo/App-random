@@ -1,0 +1,68 @@
+<resources>
+    <string name="app_name">Repón</string>
+
+    <string name="home_subtitle">Reabasteça antes que acabe</string>
+    <string name="home_empty_title">Nada por aqui ainda</string>
+    <string name="home_empty_body">Adicione seus consumíveis do dia a dia (café, creme dental, ração…) e o Repón avisa antes que acabem.</string>
+    <string name="home_section_soon">Comprar logo</string>
+    <string name="home_section_ok">Ainda tem de sobra</string>
+    <string name="add_item">Adicionar</string>
+    <string name="settings">Ajustes</string>
+    <string name="sort_label">Ordenar</string>
+    <string name="sort_urgency">Por urgência</string>
+    <string name="sort_name">Por nome</string>
+    <string name="sort_recent">Mais recentes</string>
+
+    <string name="status_ok">Tudo certo</string>
+    <string name="status_soon">Comprar logo</string>
+    <string name="status_out">Acabou</string>
+    <string name="due_today">Acaba hoje</string>
+    <plurals name="days_left">
+        <item quantity="one">Falta %d dia</item>
+        <item quantity="other">Faltam %d dias</item>
+    </plurals>
+    <plurals name="days_overdue">
+        <item quantity="one">Acabou há %d dia</item>
+        <item quantity="other">Acabou há %d dias</item>
+    </plurals>
+
+    <string name="action_bought">Comprei</string>
+    <string name="action_save">Salvar</string>
+    <string name="action_delete">Excluir</string>
+    <string name="action_cancel">Cancelar</string>
+    <string name="action_today">Hoje</string>
+    <string name="back">Voltar</string>
+    <string name="restocked_toast">Pronto! Reiniciado e aprendendo seu ritmo</string>
+
+    <string name="new_item_title">Novo item</string>
+    <string name="edit_item_title">Editar item</string>
+    <string name="field_name">Nome</string>
+    <string name="field_name_hint">ex.: Café, Creme dental, Ração</string>
+    <string name="field_emoji">Ícone</string>
+    <string name="field_duration">Dura cerca de… (dias)</string>
+    <string name="field_duration_help">O Repón ajusta isto sozinho cada vez que você repõe.</string>
+    <string name="field_buffer">Avise-me com esta antecedência (dias)</string>
+    <string name="field_started">Comprado / aberto em</string>
+    <string name="field_notify">Avisar quando estiver acabando</string>
+    <string name="error_name_required">Digite um nome</string>
+    <string name="error_duration_required">Informe quantos dias dura</string>
+    <string name="learned_from">Ajustado pelas suas últimas %1$d reposições</string>
+
+    <string name="settings_notifications">Avisos</string>
+    <string name="settings_notifications_desc">Receba uma notificação quando algo estiver acabando</string>
+    <string name="settings_theme">Aparência</string>
+    <string name="theme_system">Sistema</string>
+    <string name="theme_light">Claro</string>
+    <string name="theme_dark">Escuro</string>
+    <string name="settings_about">Sobre</string>
+    <string name="settings_version">Versão %1$s</string>
+    <string name="settings_tagline">Offline · privado · os anúncios mantêm o app grátis</string>
+    <string name="permission_notifications_rationale">Permita as notificações para o Repón avisar antes de algo acabar.</string>
+
+    <string name="channel_name">Lembretes de reposição</string>
+    <string name="channel_desc">Avisos quando um item está quase acabando</string>
+    <string name="notif_title_soon">Está acabando</string>
+    <string name="notif_title_out">Acabou</string>
+    <string name="notif_text_soon">Quase não resta %1$s — hora de comprar mais.</string>
+    <string name="notif_text_out">Acabou: %1$s.</string>
+</resources>

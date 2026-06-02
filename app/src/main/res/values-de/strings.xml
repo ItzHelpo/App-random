@@ -1,0 +1,68 @@
+<resources>
+    <string name="app_name">Repón</string>
+
+    <string name="home_subtitle">Nachkaufen, bevor es leer ist</string>
+    <string name="home_empty_title">Noch nichts vorhanden</string>
+    <string name="home_empty_body">Füge deine alltäglichen Verbrauchsartikel hinzu (Kaffee, Zahnpasta, Tierfutter…) und Repón erinnert dich, bevor sie ausgehen.</string>
+    <string name="home_section_soon">Bald nachkaufen</string>
+    <string name="home_section_ok">Noch genug da</string>
+    <string name="add_item">Hinzufügen</string>
+    <string name="settings">Einstellungen</string>
+    <string name="sort_label">Sortieren</string>
+    <string name="sort_urgency">Nach Dringlichkeit</string>
+    <string name="sort_name">Nach Name</string>
+    <string name="sort_recent">Zuletzt hinzugefügt</string>
+
+    <string name="status_ok">Alles gut</string>
+    <string name="status_soon">Bald nachkaufen</string>
+    <string name="status_out">Leer</string>
+    <string name="due_today">Geht heute aus</string>
+    <plurals name="days_left">
+        <item quantity="one">Noch %d Tag</item>
+        <item quantity="other">Noch %d Tage</item>
+    </plurals>
+    <plurals name="days_overdue">
+        <item quantity="one">Vor %d Tag ausgegangen</item>
+        <item quantity="other">Vor %d Tagen ausgegangen</item>
+    </plurals>
+
+    <string name="action_bought">Gekauft</string>
+    <string name="action_save">Speichern</string>
+    <string name="action_delete">Löschen</string>
+    <string name="action_cancel">Abbrechen</string>
+    <string name="action_today">Heute</string>
+    <string name="back">Zurück</string>
+    <string name="restocked_toast">Super! Zurückgesetzt und lernt dein Tempo</string>
+
+    <string name="new_item_title">Neuer Artikel</string>
+    <string name="edit_item_title">Artikel bearbeiten</string>
+    <string name="field_name">Name</string>
+    <string name="field_name_hint">z. B. Kaffee, Zahnpasta, Tierfutter</string>
+    <string name="field_emoji">Symbol</string>
+    <string name="field_duration">Reicht mir etwa… (Tage)</string>
+    <string name="field_duration_help">Repón passt das bei jedem Nachkauf automatisch an.</string>
+    <string name="field_buffer">So viele Tage vorher erinnern</string>
+    <string name="field_started">Gekauft / geöffnet am</string>
+    <string name="field_notify">Erinnern, wenn es zur Neige geht</string>
+    <string name="error_name_required">Bitte einen Namen eingeben</string>
+    <string name="error_duration_required">Gib an, wie viele Tage es reicht</string>
+    <string name="learned_from">Angepasst aus deinen letzten %1$d Nachkäufen</string>
+
+    <string name="settings_notifications">Erinnerungen</string>
+    <string name="settings_notifications_desc">Erhalte eine Benachrichtigung, wenn etwas zur Neige geht</string>
+    <string name="settings_theme">Darstellung</string>
+    <string name="theme_system">System</string>
+    <string name="theme_light">Hell</string>
+    <string name="theme_dark">Dunkel</string>
+    <string name="settings_about">Über</string>
+    <string name="settings_version">Version %1$s</string>
+    <string name="settings_tagline">Offline · privat · Werbung hält die App kostenlos</string>
+    <string name="permission_notifications_rationale">Erlaube Benachrichtigungen, damit Repón dich rechtzeitig erinnert.</string>
+
+    <string name="channel_name">Nachkauf-Erinnerungen</string>
+    <string name="channel_desc">Warnungen, wenn ein Artikel bald leer ist</string>
+    <string name="notif_title_soon">Geht zur Neige</string>
+    <string name="notif_title_out">Ist leer</string>
+    <string name="notif_text_soon">%1$s ist fast leer – Zeit nachzukaufen.</string>
+    <string name="notif_text_out">Leer: %1$s.</string>
+</resources>
