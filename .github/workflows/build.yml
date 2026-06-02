@@ -74,28 +74,29 @@ jobs:
       - name: Rename APK
         run: |
           mkdir -p dist
-          cp app/build/outputs/apk/debug/app-debug.apk dist/Azar-prueba.apk
+          cp app/build/outputs/apk/debug/app-debug.apk dist/Repon-prueba.apk
 
       - name: Upload APK as build artifact
         uses: actions/upload-artifact@v4
         with:
-          name: Azar-prueba-apk
-          path: dist/Azar-prueba.apk
+          name: Repon-prueba-apk
+          path: dist/Repon-prueba.apk
 
       - name: Publish APK to a Release (easy phone download)
         uses: softprops/action-gh-release@v2
         with:
           tag_name: prueba
-          name: "Azar — versión de prueba (instalable)"
+          name: "Repón — versión de prueba (instalable)"
           body: |
-            APK de prueba listo para instalar en Android (mínimo Android 8.0).
+            APK de prueba de **Repón** listo para instalar en Android (mínimo Android 8.0).
 
             **Cómo instalar desde el móvil:**
-            1. Descarga `Azar-prueba.apk` desde abajo (sección *Assets*).
+            1. Descarga `Repon-prueba.apk` desde abajo (sección *Assets*).
             2. Ábrelo. Si Android avisa, permite "instalar apps de esta fuente".
-            3. ¡Listo! Verás anuncios de PRUEBA (no generan dinero todavía).
+            3. ¡Listo! Añade un consumible y verás cómo te avisa antes de que se acabe.
 
+            Muestra anuncios de PRUEBA (no generan dinero todavía).
             Se actualiza automáticamente en cada cambio del código.
-          files: dist/Azar-prueba.apk
+          files: dist/Repon-prueba.apk
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

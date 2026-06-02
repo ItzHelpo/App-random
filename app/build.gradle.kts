@@ -2,14 +2,15 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.kotlin.compose)
+    alias(libs.plugins.ksp)
 }
 
 android {
-    namespace = "com.azar.decide"
+    namespace = "com.repon.app"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.azar.decide"
+        applicationId = "com.repon.app"
         minSdk = 26
         targetSdk = 35
         versionCode = 1
@@ -22,7 +23,6 @@ android {
 
     buildTypes {
         debug {
-            // Keep test ad units while developing.
             isMinifyEnabled = false
         }
         release {
@@ -32,7 +32,6 @@ android {
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
             )
-            // NOTE: configure your own signing config before publishing to Google Play.
         }
     }
 
@@ -61,6 +60,7 @@ dependencies {
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.lifecycle.runtime.compose)
+    implementation(libs.androidx.lifecycle.viewmodel.compose)
     implementation(libs.androidx.activity.compose)
 
     implementation(platform(libs.androidx.compose.bom))
@@ -71,6 +71,14 @@ dependencies {
     implementation(libs.androidx.material.icons.extended)
     implementation(libs.androidx.navigation.compose)
     implementation(libs.androidx.datastore.preferences)
+
+    // Room (local database)
+    implementation(libs.androidx.room.runtime)
+    implementation(libs.androidx.room.ktx)
+    ksp(libs.androidx.room.compiler)
+
+    // WorkManager (daily restock checks + notifications)
+    implementation(libs.androidx.work.runtime.ktx)
 
     // Google AdMob
     implementation(libs.play.services.ads)

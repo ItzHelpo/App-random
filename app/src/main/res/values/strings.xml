@@ -1,79 +1,69 @@
 <resources>
-    <string name="app_name">Azar</string>
+    <string name="app_name">Repón</string>
 
     <!-- Home -->
-    <string name="home_subtitle">Decide and generate at random</string>
+    <string name="home_subtitle">Restock before you run out</string>
+    <string name="home_empty_title">Nothing tracked yet</string>
+    <string name="home_empty_body">Add your everyday consumables (coffee, toothpaste, pet food…) and Repón will remind you before they run out.</string>
+    <string name="home_section_soon">Buy soon</string>
+    <string name="home_section_ok">Plenty left</string>
+    <string name="add_item">Add item</string>
     <string name="settings">Settings</string>
 
-    <!-- Tools -->
-    <string name="tool_coin">Coin Flip</string>
-    <string name="tool_coin_desc">Heads or tails</string>
-    <string name="tool_dice">Dice</string>
-    <string name="tool_dice_desc">Roll one or more dice</string>
-    <string name="tool_number">Random Number</string>
-    <string name="tool_number_desc">Pick a number in a range</string>
-    <string name="tool_yesno">Yes or No</string>
-    <string name="tool_yesno_desc">Let chance decide</string>
-    <string name="tool_raffle">Raffle</string>
-    <string name="tool_raffle_desc">Pick a winner from a list</string>
-    <string name="tool_password">Password</string>
-    <string name="tool_password_desc">Strong random passwords</string>
-    <string name="tool_lottery">Lottery</string>
-    <string name="tool_lottery_desc">Lucky numbers</string>
+    <!-- Status -->
+    <string name="status_ok">On track</string>
+    <string name="status_soon">Buy soon</string>
+    <string name="status_out">Out</string>
+    <string name="due_today">Runs out today</string>
+    <plurals name="days_left">
+        <item quantity="one">%d day left</item>
+        <item quantity="other">%d days left</item>
+    </plurals>
+    <plurals name="days_overdue">
+        <item quantity="one">Ran out %d day ago</item>
+        <item quantity="other">Ran out %d days ago</item>
+    </plurals>
 
-    <!-- Common -->
-    <string name="action_generate">Generate</string>
-    <string name="action_flip">Flip</string>
-    <string name="action_roll">Roll</string>
-    <string name="action_pick">Pick</string>
-    <string name="action_copy">Copy</string>
-    <string name="action_clear">Clear</string>
-    <string name="copied">Copied to clipboard</string>
+    <!-- Actions -->
+    <string name="action_bought">I bought more</string>
+    <string name="action_save">Save</string>
+    <string name="action_delete">Delete</string>
+    <string name="action_cancel">Cancel</string>
     <string name="back">Back</string>
-    <string name="tap_to_start">Tap the button to start</string>
+    <string name="restocked_toast">Nice! Reset and learning your pace</string>
 
-    <!-- Coin -->
-    <string name="coin_heads">Heads</string>
-    <string name="coin_tails">Tails</string>
-
-    <!-- Dice -->
-    <string name="dice_count">Number of dice</string>
-    <string name="dice_sides">Sides</string>
-    <string name="dice_total">Total: %1$d</string>
-
-    <!-- Number -->
-    <string name="number_min">Minimum</string>
-    <string name="number_max">Maximum</string>
-    <string name="number_invalid_range">Maximum must be greater than minimum</string>
-
-    <!-- Yes / No -->
-    <string name="yesno_yes">YES</string>
-    <string name="yesno_no">NO</string>
-
-    <!-- Raffle -->
-    <string name="raffle_hint">One name per line</string>
-    <string name="raffle_winner">Winner</string>
-    <string name="raffle_need_names">Add at least two names</string>
-    <string name="raffle_remove_winner">Remove winner from list</string>
-
-    <!-- Password -->
-    <string name="password_length">Length: %1$d</string>
-    <string name="password_uppercase">Uppercase (A-Z)</string>
-    <string name="password_lowercase">Lowercase (a-z)</string>
-    <string name="password_numbers">Numbers (0-9)</string>
-    <string name="password_symbols">Symbols (!@#$)</string>
-    <string name="password_need_option">Select at least one character type</string>
-
-    <!-- Lottery -->
-    <string name="lottery_count">How many numbers</string>
-    <string name="lottery_max">Highest number</string>
+    <!-- Add / edit -->
+    <string name="new_item_title">New item</string>
+    <string name="edit_item_title">Edit item</string>
+    <string name="field_name">Name</string>
+    <string name="field_name_hint">e.g. Coffee, Toothpaste, Dog food</string>
+    <string name="field_emoji">Icon</string>
+    <string name="field_duration">It lasts me about… (days)</string>
+    <string name="field_duration_help">Repón fine-tunes this automatically each time you restock.</string>
+    <string name="field_buffer">Remind me this many days early</string>
+    <string name="field_started">Bought / opened on</string>
+    <string name="field_notify">Notify me when it is running low</string>
+    <string name="error_name_required">Please enter a name</string>
+    <string name="error_duration_required">Enter how many days it lasts</string>
+    <string name="learned_from">Adjusted from your last %1$d restocks</string>
 
     <!-- Settings -->
-    <string name="settings_theme">Dark theme</string>
-    <string name="settings_theme_system">Follow system</string>
-    <string name="settings_sound">Sound &amp; vibration</string>
+    <string name="settings_notifications">Reminders</string>
+    <string name="settings_notifications_desc">Get a notification when something is running low</string>
+    <string name="settings_theme">Appearance</string>
+    <string name="theme_system">System</string>
+    <string name="theme_light">Light</string>
+    <string name="theme_dark">Dark</string>
     <string name="settings_about">About</string>
     <string name="settings_version">Version %1$s</string>
-    <string name="settings_privacy">Privacy choices</string>
-    <string name="settings_made_with">Made with chance · Ads keep this app free</string>
+    <string name="settings_tagline">Offline · private · ads keep it free</string>
+    <string name="permission_notifications_rationale">Allow notifications so Repón can warn you before things run out.</string>
+
+    <!-- Notifications -->
+    <string name="channel_name">Restock reminders</string>
+    <string name="channel_desc">Warnings when a tracked item is about to run out</string>
+    <string name="notif_title_soon">Running low</string>
+    <string name="notif_title_out">You have run out</string>
+    <string name="notif_text_soon">%1$s is almost gone — time to buy more.</string>
+    <string name="notif_text_out">%1$s has run out.</string>
 </resources>

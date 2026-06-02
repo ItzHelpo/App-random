@@ -3,24 +3,16 @@
     android:height="108dp"
     android:viewportWidth="108"
     android:viewportHeight="108">
-    <!-- Die body -->
+    <!-- Down arrow = restock / replenish -->
     <path
         android:fillColor="#FFFFFF"
-        android:pathData="M38,30 h32 a8,8 0 0 1 8,8 v32 a8,8 0 0 1 -8,8 h-32 a8,8 0 0 1 -8,-8 v-32 a8,8 0 0 1 8,-8 z" />
-    <!-- Five pips (quincunx) -->
+        android:pathData="M50,26 h8 v12 h8 l-12,12 l-12,-12 h8 z" />
+    <!-- Box body -->
     <path
-        android:fillColor="#6750A4"
-        android:pathData="M44,44 m-4,0 a4,4 0 1,0 8,0 a4,4 0 1,0 -8,0" />
+        android:fillColor="#FFFFFF"
+        android:pathData="M34,54 a2,2 0 0 1 2,-2 h36 a2,2 0 0 1 2,2 v24 a2,2 0 0 1 -2,2 h-36 a2,2 0 0 1 -2,-2 z" />
+    <!-- Box tape line -->
     <path
-        android:fillColor="#6750A4"
-        android:pathData="M64,44 m-4,0 a4,4 0 1,0 8,0 a4,4 0 1,0 -8,0" />
-    <path
-        android:fillColor="#6750A4"
-        android:pathData="M54,54 m-4,0 a4,4 0 1,0 8,0 a4,4 0 1,0 -8,0" />
-    <path
-        android:fillColor="#6750A4"
-        android:pathData="M44,64 m-4,0 a4,4 0 1,0 8,0 a4,4 0 1,0 -8,0" />
-    <path
-        android:fillColor="#6750A4"
-        android:pathData="M64,64 m-4,0 a4,4 0 1,0 8,0 a4,4 0 1,0 -8,0" />
+        android:fillColor="#00897B"
+        android:pathData="M34,61 h40 v3 h-40 z" />
 </vector>

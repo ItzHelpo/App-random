@@ -1,79 +1,69 @@
 <resources>
-    <string name="app_name">Azar</string>
+    <string name="app_name">Repón</string>
 
     <!-- Inicio -->
-    <string name="home_subtitle">Decide y genera al azar</string>
+    <string name="home_subtitle">Repón antes de que se acabe</string>
+    <string name="home_empty_title">Aún no hay nada</string>
+    <string name="home_empty_body">Añade tus consumibles del día a día (café, pasta de dientes, pienso…) y Repón te avisará antes de que se acaben.</string>
+    <string name="home_section_soon">Comprar pronto</string>
+    <string name="home_section_ok">Te queda de sobra</string>
+    <string name="add_item">Añadir</string>
     <string name="settings">Ajustes</string>
 
-    <!-- Herramientas -->
-    <string name="tool_coin">Cara o Cruz</string>
-    <string name="tool_coin_desc">Lanza una moneda</string>
-    <string name="tool_dice">Dados</string>
-    <string name="tool_dice_desc">Tira uno o varios dados</string>
-    <string name="tool_number">Número Aleatorio</string>
-    <string name="tool_number_desc">Elige un número en un rango</string>
-    <string name="tool_yesno">Sí o No</string>
-    <string name="tool_yesno_desc">Que decida el azar</string>
-    <string name="tool_raffle">Sorteo</string>
-    <string name="tool_raffle_desc">Elige un ganador de una lista</string>
-    <string name="tool_password">Contraseña</string>
-    <string name="tool_password_desc">Contraseñas seguras al azar</string>
-    <string name="tool_lottery">Lotería</string>
-    <string name="tool_lottery_desc">Números de la suerte</string>
+    <!-- Estado -->
+    <string name="status_ok">Vas bien</string>
+    <string name="status_soon">Comprar pronto</string>
+    <string name="status_out">Agotado</string>
+    <string name="due_today">Se acaba hoy</string>
+    <plurals name="days_left">
+        <item quantity="one">Queda %d día</item>
+        <item quantity="other">Quedan %d días</item>
+    </plurals>
+    <plurals name="days_overdue">
+        <item quantity="one">Se acabó hace %d día</item>
+        <item quantity="other">Se acabó hace %d días</item>
+    </plurals>
 
-    <!-- Común -->
-    <string name="action_generate">Generar</string>
-    <string name="action_flip">Lanzar</string>
-    <string name="action_roll">Tirar</string>
-    <string name="action_pick">Elegir</string>
-    <string name="action_copy">Copiar</string>
-    <string name="action_clear">Borrar</string>
-    <string name="copied">Copiado al portapapeles</string>
+    <!-- Acciones -->
+    <string name="action_bought">Compré más</string>
+    <string name="action_save">Guardar</string>
+    <string name="action_delete">Eliminar</string>
+    <string name="action_cancel">Cancelar</string>
     <string name="back">Atrás</string>
-    <string name="tap_to_start">Pulsa el botón para empezar</string>
+    <string name="restocked_toast">¡Hecho! Reiniciado y aprendiendo tu ritmo</string>
 
-    <!-- Moneda -->
-    <string name="coin_heads">Cara</string>
-    <string name="coin_tails">Cruz</string>
-
-    <!-- Dados -->
-    <string name="dice_count">Número de dados</string>
-    <string name="dice_sides">Caras</string>
-    <string name="dice_total">Total: %1$d</string>
-
-    <!-- Número -->
-    <string name="number_min">Mínimo</string>
-    <string name="number_max">Máximo</string>
-    <string name="number_invalid_range">El máximo debe ser mayor que el mínimo</string>
-
-    <!-- Sí / No -->
-    <string name="yesno_yes">SÍ</string>
-    <string name="yesno_no">NO</string>
-
-    <!-- Sorteo -->
-    <string name="raffle_hint">Un nombre por línea</string>
-    <string name="raffle_winner">Ganador</string>
-    <string name="raffle_need_names">Añade al menos dos nombres</string>
-    <string name="raffle_remove_winner">Quitar ganador de la lista</string>
-
-    <!-- Contraseña -->
-    <string name="password_length">Longitud: %1$d</string>
-    <string name="password_uppercase">Mayúsculas (A-Z)</string>
-    <string name="password_lowercase">Minúsculas (a-z)</string>
-    <string name="password_numbers">Números (0-9)</string>
-    <string name="password_symbols">Símbolos (!@#$)</string>
-    <string name="password_need_option">Selecciona al menos un tipo de carácter</string>
-
-    <!-- Lotería -->
-    <string name="lottery_count">Cuántos números</string>
-    <string name="lottery_max">Número más alto</string>
+    <!-- Añadir / editar -->
+    <string name="new_item_title">Nuevo producto</string>
+    <string name="edit_item_title">Editar producto</string>
+    <string name="field_name">Nombre</string>
+    <string name="field_name_hint">p. ej. Café, Pasta de dientes, Pienso</string>
+    <string name="field_emoji">Icono</string>
+    <string name="field_duration">Me dura unos… (días)</string>
+    <string name="field_duration_help">Repón ajusta esto solo cada vez que repones.</string>
+    <string name="field_buffer">Avísame estos días antes</string>
+    <string name="field_started">Comprado / abierto el</string>
+    <string name="field_notify">Avísame cuando se esté acabando</string>
+    <string name="error_name_required">Escribe un nombre</string>
+    <string name="error_duration_required">Indica cuántos días dura</string>
+    <string name="learned_from">Ajustado con tus últimas %1$d recompras</string>
 
     <!-- Ajustes -->
-    <string name="settings_theme">Tema oscuro</string>
-    <string name="settings_theme_system">Seguir el sistema</string>
-    <string name="settings_sound">Sonido y vibración</string>
+    <string name="settings_notifications">Avisos</string>
+    <string name="settings_notifications_desc">Recibe una notificación cuando algo se esté acabando</string>
+    <string name="settings_theme">Apariencia</string>
+    <string name="theme_system">Sistema</string>
+    <string name="theme_light">Claro</string>
+    <string name="theme_dark">Oscuro</string>
     <string name="settings_about">Acerca de</string>
     <string name="settings_version">Versión %1$s</string>
-    <string name="settings_privacy">Opciones de privacidad</string>
-    <string name="settings_made_with">Hecho con azar · Los anuncios mantienen la app gratis</string>
+    <string name="settings_tagline">Sin conexión · privado · los anuncios lo mantienen gratis</string>
+    <string name="permission_notifications_rationale">Permite las notificaciones para que Repón te avise antes de que se acaben las cosas.</string>
+
+    <!-- Notificaciones -->
+    <string name="channel_name">Recordatorios de recompra</string>
+    <string name="channel_desc">Avisos cuando un producto está a punto de acabarse</string>
+    <string name="notif_title_soon">Se está acabando</string>
+    <string name="notif_title_out">Se ha agotado</string>
+    <string name="notif_text_soon">Casi no queda %1$s — toca comprar más.</string>
+    <string name="notif_text_out">Se ha agotado: %1$s.</string>
 </resources>

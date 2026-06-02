@@ -1,4 +1,5 @@
-# Google Mobile Ads SDK keeps the classes it needs via its own consumer rules.
-# Keep generic crash-friendly attributes.
+# Keep crash-friendly attributes.
 -keepattributes SourceFile,LineNumberTable
 -keepattributes *Annotation*
+
+# Room and WorkManager ship their own consumer ProGuard rules; nothing extra needed.
